@@ -34,3 +34,4 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = countryAdapter
     }
 }
+// пустая строка
