@@ -6,3 +6,36 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <ImageView
+        android:id="@+id/flagImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/countryNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/flagImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="8dp"
+        tools:text="Kazakhastan" />
+
+    <TextView
+        android:id="@+id/populationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/flagImageView"
+        app:layout_constraintTop_toBottomOf="@id/countryNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="8dp"
+        tools:text="Population: 98000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
